@@ -253,7 +253,7 @@ for t in range(T):  # Compiling final output
     result_org[t, 10] = float(np.sum(convergence[t, :])) / sampleSize
 
 # WRITING RESULTS TO CSV FILE
-filename = ("SCBB" + " (Social learning mode = " + str(socialLearning) +"; choice rule = "+ str(choiceRule)+"; updating rule =  "+ str(updateRule)+ ').csv')
+filename = ("Social learning" + " (mode = " + str(socialLearning) +"; choice rule = "+ str(choiceRule)+"; updating rule =  "+ str(updateRule)+ ').csv')
 with open(filename, 'w', newline='') as f:
     thewriter = csv.writer(f)
     thewriter.writerow(
